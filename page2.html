@@ -1,0 +1,140 @@
+<html>
+	<head>
+		<title> My page </title>
+		<meta charset="utf-8">
+		<script>
+			function login(){
+				var username = document.getElementById("un").value;
+				var pass = document.getElementById("pw").value;
+				if (username == "uktc" && pass=="1234") {
+				 alert ("super");
+				}
+				else{ 
+				alert ("eee");
+				}
+			}
+		</script>
+		<script>
+			function sum(){
+				var n1 = parseInt(document.getElementById("num1").value);
+				var n2 = parseInt(document.getElementById("num2").value);
+				var result=n1+n2;
+				alert("Сумата е "+ result);
+			}
+			function calc(num){
+				var n1 = parseInt(document.getElementById("num1").value);
+				var n2 = parseInt(document.getElementById("num2").value);
+				if(num==1) {
+					var result=n1+n2;
+					alert("Сумата е "+ result);
+				}
+				else if(num==2){
+					var result=n1-n2;
+					alert("Разликата е "+ result);
+					}
+				else if(num==3){
+					var result=n1*n2;
+					alert("Умножението е "+ result);
+					}
+				else if(num==4){
+					var result=n1/n2;
+					alert("Делението е "+ result);
+					}
+			}
+		</script>
+		
+		<style>
+			body{
+				background-image: linear-gradient(violet, blue);
+				padding: 100px 100px 100px 100px;
+				
+			}
+			
+			input {
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #000000;
+			}
+			
+			button {
+			background-color: #FFEBCD;
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			front-size: 16 px;
+			}
+						
+		</style>
+		
+		
+		
+		
+		
+	</head>
+
+	<body>
+		<ol type="I">
+			<h2>Рецепта за торта</h2>
+			<li> Блатове </li>
+			<li> Сметана </li>
+			<li> Бял течен шоколад </li>
+			<li> Кокосови пръчици</li>
+			<li> Ягоди </li>
+		</ol>
+	
+		<form>
+		
+			Потребителско име: <input type="text"> <br> <br>
+		    Парола:<input type="password">	<br>
+		    <button> Влез </button>  
+		</form>
+		
+		<form>
+		<table>
+			<tr>
+				<td align="right"> Потребителско име </td>
+				<td> <input id="un" type="text"> </td>
+			</tr>
+			<tr>
+				<td align="right"> Парола </td>
+				<td> <input id="pw" type="password"> </td>
+			</tr>
+		    <tr>
+				<td colspan="2" align="center"> <button onclick="login()"> Влез </button> </td>
+			</tr>
+		 </table>
+		</form>
+		
+		<form>
+		<table>
+			<tr>
+				<td align="right"> Число 1 </td>
+				<td> <input id="num1" type="number"> </td>
+			</tr>
+			<tr>
+				<td align="right"> Число 2 </td>
+				<td> <input id="num2" type="number"> </td>
+			</tr>
+		    <tr>
+				<td colspan="2" align="center"> <button onclick="calc(1)"> Сумата </button> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <button onclick="calc(2)"> Разликата </button> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <button onclick="calc(3)"> Умножението </button> </td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"> <button onclick="calc(4)"> Делението </button> </td>
+			</tr>
+		 </table>
+		</form>
+		
+	</body>
+
+
+
+</html>
